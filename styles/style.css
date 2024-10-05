@@ -2,12 +2,16 @@
     margin: 0;
     font-family: poppins;
 }
+body{
+    overflow-x: hidden;
+}
+
 .top-header{
     background-color: #fff9ea;
 }
 .nav-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 90px;
     align-items: center;
     margin: 0 100px;
@@ -45,7 +49,7 @@ ul>li>a{
 
 .hero-container{
     background-image: url(../Images/shapes.png);
-    height: 100%;
+    height: 90vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,4 +62,95 @@ ul>li>a{
 .hero-text{
     display: flex;
     align-items: center;
+}
+
+/*  serve section style */
+.serve-container{
+    margin-top: 80px;
+}
+
+.serve-content{
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+    margin-top: 32px;
+}
+/* popular section style */
+.popular-container{
+    margin-top: 80px;
+}
+.popular-content{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.img-container{
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 15px 15px 0 0;
+}
+
+.icon-element{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.more-content{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+
+/* review style */
+
+.review-container{
+    display: flex;
+}
+
+.next-image{
+    position: relative;
+    top: -34px;
+}
+
+/* bottom section style */
+
+.bottom-container{
+    margin-left: 84px;
+}
+
+/* footer section style */
+
+.footer-image{
+    background-image: url(../Images/bg-image.png);
+    height: 65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.footer-parent{
+    display: flex;
+    margin-top: 60px;
+}
+
+.icon-style{
+    display: flex;
+    gap: 40px;
+    padding-top: 15px;
+}
+
+.footer-info{
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.footer-style{
+    margin-top: 100px;
+    border-top: 1px solid #c6c2b6;
+    height: 60px;
+    width: 1050px;
+    margin-left: 80px;
 }
