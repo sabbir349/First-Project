@@ -27,6 +27,10 @@ ul>li>a{
     font-weight: 500;
 }
 
+.first-list{
+    border-bottom: 2px solid #ffcb45;
+}
+
 .nav-menu{
     display: flex;
     gap: 30px;
@@ -58,6 +62,7 @@ ul>li>a{
     display: flex;
     justify-content: space-between;
 }
+
 
 .hero-text{
     display: flex;
@@ -110,6 +115,15 @@ ul>li>a{
     display: flex;
 }
 
+.review-image{
+    margin-left: 100px;
+}
+
+.review-content{
+    display: flex;
+    gap: 30px;
+}
+
 .next-image{
     position: relative;
     top: -34px;
@@ -127,7 +141,6 @@ ul>li>a{
     background-image: url(../Images/bg-image.png);
     height: 65vh;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -147,10 +160,111 @@ ul>li>a{
     margin-top: 60px;
     margin-left: 40px;
 }
+.footer-info-content{
+    display: flex;
+}
 .footer-style{
     margin-top: 100px;
     border-top: 1px solid #c6c2b6;
     height: 60px;
     width: 1050px;
     margin-left: 80px;
+}
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .top-header{
+        background-color: transparent;
+    }
+    .nav-container{
+        display: block;
+        
+    }
+    .nav-menu{
+        display: block;
+        margin-left: -40px;
+    }
+    .first-list{
+        border: none;
+    }
+
+    /* hero section */
+
+    .hero-container{
+        background-image: none;
+    }
+    .hero-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-container{
+        margin-top: 150px;
+        margin-left: -10px;
+    }
+    .serve-container{
+        margin-top: 300px;
+    }
+    .serve-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .serve-image{
+        display: flex;
+        justify-content: center;
+    }
+    .popular-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .popular-serve-box{
+        width: 300px;
+        margin: auto;
+    }
+
+    /* review section */
+
+    .review-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .review-image{
+        
+        margin-left: 10px;
+    }
+    .review-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .review-text{
+        margin-left: 40px;
+    }
+
+    /* bottom container */
+
+    .bottom-container{
+        margin-left: 40px;
+    }
+
+    /* footer section */
+
+    .footer-image{
+        background-image: url("../Images/bg-image.png");
+        height: 100%; 
+    }
+    .footer-parent{
+        display: block;
+        margin-left: 30px;
+    }
+    .footer-info-content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: -30px; 
+    }
+    .footer-style{
+        border: none;
+    }
 }
