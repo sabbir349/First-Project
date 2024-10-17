@@ -229,8 +229,12 @@ ul>li>a{
         flex-direction: column;
     }
     .review-image{
-        
+        display: flex;
+        flex-direction: column;
         margin-left: 10px;
+    }
+    .next-image{
+        position: static;
     }
     .review-content{
         display: flex;
