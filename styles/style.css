@@ -127,6 +127,11 @@ ul>li>a{
 .next-image{
     position: relative;
     top: -34px;
+    width: 550px;
+}
+.next-img-2{
+    position: relative; 
+    left: -30px;
 }
 
 /* bottom section style */
@@ -235,6 +240,14 @@ ul>li>a{
     }
     .next-image{
         position: static;
+        width: 100%;
+    }
+    .next-img-1{
+        width: 100%;
+    }
+    .next-img-2{
+        position: static;
+        width: 100%;
     }
     .review-content{
         display: flex;
